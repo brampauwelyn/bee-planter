@@ -1,0 +1,20 @@
+[
+  {
+    "name": "viburnum bodnantense",
+    "description": "Random description",
+    "nectar": 2,
+    "pollen": 2,
+    "image": "assets/images/viburnum-bodnantense.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Cactus",
+    "description": "another description",
+    "color": "blue"
+  },
+  {
+    "name": "Kiwi plant",
+    "description": "I want a kiwi plant",
+    "color": "green"
+  }
+]
