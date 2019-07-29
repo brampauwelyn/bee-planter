@@ -8,13 +8,27 @@
     "color": "red"
   },
   {
-    "name": "Cactus",
-    "description": "another description",
-    "color": "blue"
+    "name": "viburnum bodnantense 2",
+    "description": "Random description",
+    "nectar": 4,
+    "pollen": 4,
+    "image": "assets/images/viburnum-bodnantense.jpg",
+    "color": "yellow"
   },
   {
-    "name": "Kiwi plant",
-    "description": "I want a kiwi plant",
+    "name": "viburnum bodnantense 3",
+    "description": "Random description",
+    "nectar": 1,
+    "pollen": 4,
+    "image": "assets/images/viburnum-bodnantense.jpg",
     "color": "green"
+  },
+  {
+    "name": "viburnum bodnantense 4",
+    "description": "Random description",
+    "nectar": 5,
+    "pollen": 4,
+    "image": "assets/images/viburnum-bodnantense.jpg",
+    "color": "black"
   }
 ]

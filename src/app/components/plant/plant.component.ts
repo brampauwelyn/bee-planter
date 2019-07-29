@@ -8,6 +8,7 @@ import plantsData from './plants.json';
 })
 
 export class PlantComponent {
+  title = 'BeePlanter';
   plants: Array<any> = plantsData;
   filteredPlants: Array<any> = [...plantsData];
 
@@ -19,6 +20,12 @@ export class PlantComponent {
   filterByColor(color: string) {
     this.filteredPlants = this.filteredPlants.filter( plant => {
       return plant.color === color;
+    });
+  }
+
+  filterByNectar(minValue: number, maxValue: number){
+    this.filteredPlants = this.filteredPlants.filter( plant => {
+      return plant.nectar >= minValue && plant.nectar <= maxValue;
     });
   }
 
