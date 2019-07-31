@@ -4,6 +4,7 @@
     <button (click)="resetFilters()">reset filters</button>
     <button (click)="filterByColor('red')">color filter</button>
     <button (click)="filterByNectar(3, 5)">nectar filter</button>
+    <!-- <span [ngStyle]="setBackgroundColor(plant.color)" class="color-preview"></span> -->
   </div>
 
   <div class="plants-wrapper">
@@ -12,11 +13,13 @@
         <img [src]="plant.image" alt="">
       </div>
       <div class="card-body">
-          <h1>{{ plant.name }}</h1>
+          <h2 class="card-title">{{ plant.name }}</h2>
+          <div class="plant-specs">
+            <p>Flowering: </p>
+            <p>Nectar: {{ plant.nectar }}</p>
+            <p>Pollen: {{ plant.pollen }}</p>
+          </div>
           <p>{{ plant.description }}</p>
-          <p>{{ plant.color }}</p>
-          <p>Nectar: {{ plant.nectar }}</p>
-          <p>Pollen: {{ plant.pollen }}</p>
       </div>
     </div>
   </div>
