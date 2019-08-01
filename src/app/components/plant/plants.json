@@ -13,7 +13,7 @@
     "nectar": 5,
     "pollen": 5,
     "image": "assets/images/parrotia-persica.jpg",
-    "color": "yellow"
+    "color": "red"
   },
   {
     "name": "sarcococca confusa",
@@ -21,7 +21,7 @@
     "nectar": 2,
     "pollen": 5,
     "image": "assets/images/sarcococca-confusa.jpg",
-    "color": "green",
+    "color": "white",
     "url": "https://en.wikipedia.org/wiki/Sarcococca_confusa"
   },
   {
@@ -30,7 +30,7 @@
     "nectar": 3,
     "pollen": 3,
     "image": "assets/images/abeliophyllum-distichum.jpg",
-    "color": "black",
+    "color": "pink",
     "url": "https://en.wikipedia.org/wiki/Abeliophyllum"
   },
   {
@@ -39,7 +39,7 @@
     "nectar": 3,
     "pollen": 5,
     "image": "assets/images/crocus-chrysanthus.jpg",
-    "color": "black",
+    "color": "yellow",
     "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
   },
   {
@@ -48,7 +48,7 @@
     "nectar": 2,
     "pollen": 2,
     "image": "assets/images/prunus-persica.jpg",
-    "color": "black",
+    "color": "pink",
     "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
   }
 ]

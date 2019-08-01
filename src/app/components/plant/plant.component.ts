@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import plantsData from './plants.json';
+import { PathLocationStrategy } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,21 @@ import plantsData from './plants.json';
 export class PlantComponent {
   title = 'BeePlanter';
   plants: Array<any> = plantsData;
+  colors: Array<string> = this.mapColors();
   activeFilters = {
     colors: [],
   };
   filteredPlants: Array<any> = [...plantsData];
+
+  mapColors() {
+    const colorsArr: Array<string> = [];
+    this.plants.map( plant => {
+      if (!colorsArr.includes(plant.color)) {
+        colorsArr.push(plant.color);
+      }
+    });
+    return colorsArr;
+  }
 
   resetFilters() {
     this.filteredPlants = this.plants;
@@ -21,10 +33,18 @@ export class PlantComponent {
   }
 
   filterByColor(color: string) {
-    this.activeFilters.colors.push(color);
-    this.filteredPlants = this.filteredPlants.filter( plant => {
+    if (this.activeFilters.colors.includes(color)) {
+      const colorIndex = this.activeFilters.colors.indexOf(color);
+      this.activeFilters.colors.splice(colorIndex, 1);
+    } else {
+      this.activeFilters.colors.push(color);
+    }
+    this.filteredPlants = this.plants.filter( plant => {
       return this.activeFilters.colors.includes(plant.color);
     });
+    if (!this.filteredPlants.length) {
+      this.resetFilters();
+    }
   }
 
   filterByNectar(minValue: number, maxValue: number){
@@ -34,8 +54,11 @@ export class PlantComponent {
   }
 
   setBackgroundColor(color: string){
+    const boxShadow = '0 1px 4px 0 rgba(0, 0, 0, 0.15), 0 2px 2px 0 rgba(0, 0, 0, 0.15)';
+    const colorActive = this.activeFilters.colors.includes(color);
     const styles = {
-      'background-color': color
+      'background-color': color,
+      'box-shadow': (colorActive) ? boxShadow : ''
     };
     return styles;
   }

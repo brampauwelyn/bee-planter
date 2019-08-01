@@ -2,7 +2,13 @@
   <div class="filters">
     <h1>{{ title }}</h1>
     <button (click)="resetFilters()">reset filters</button>
-    <button (click)="filterByColor('red')">color filter</button>
+
+    <button
+        *ngFor="let color of colors"
+        (click)="filterByColor(color)"
+        class="color-preview"
+        [ngStyle]="setBackgroundColor(color)">
+    </button>
     <button (click)="filterByNectar(3, 5)">nectar filter</button>
     <!-- <span [ngStyle]="setBackgroundColor(plant.color)" class="color-preview"></span> -->
   </div>
