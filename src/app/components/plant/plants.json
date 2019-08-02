@@ -34,13 +34,13 @@
     "url": "https://en.wikipedia.org/wiki/Abeliophyllum"
   },
   {
-    "name": "abeliophyllum distichum",
-    "description": "Crocus chrysanthus (snow crocus, golden crocus) is a species of flowering plant of the Crocus genus in the family Iridaceae. Native to the Balkans and Turkey, it bears vivid orange-yellow bowl-shaped flowers.",
+    "name": "crocus tommasinianus",
+    "description": "Crocus tommasinianus, the woodland crocus, early crocus, or Tommasini's crocus, often referred to as 'tommies'",
     "nectar": 3,
     "pollen": 5,
-    "image": "assets/images/crocus-chrysanthus.jpg",
-    "color": "yellow",
-    "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
+    "image": "assets/images/crocus-tommasinianus.jpg",
+    "color": "purple",
+    "url": "https://en.wikipedia.org/wiki/Crocus_tommasinianus"
   },
   {
     "name": "prunus persica",
@@ -49,6 +49,51 @@
     "pollen": 2,
     "image": "assets/images/prunus-persica.jpg",
     "color": "pink",
+    "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
+  },
+  {
+    "name": "prunus amygdalus",
+    "description": "The almond (Prunus dulcis, syn. Prunus amygdalus) is a species of tree native to Iran and surrounding countries as well as Central Asia, but widely cultivated elsewhere",
+    "nectar": 1,
+    "pollen": 2,
+    "image": "assets/images/prunus-amygdalus.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Almond"
+  },
+  {
+    "name": "prunus cerasifera",
+    "description": "Prunus cerasifera is a species of plum known by the common names cherry plum and myrobalan plum.",
+    "nectar": 2,
+    "pollen": 2,
+    "image": "assets/images/prunus-cerasifera.jpg",
+    "color": "pink",
+    "url": "https://en.wikipedia.org/wiki/Cherry_plum"
+  },
+  {
+    "name": "choisya ternata",
+    "description": "Choisya is a small genus of aromatic evergreen shrubs in the rue family, Rutaceae. Members of the genus are commonly known as Mexican orange due to the similarity of their flowers with those of the closely related orange, both in shape and scent.",
+    "nectar": 2,
+    "pollen": 3,
+    "image": "assets/images/choisya-ternata.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Choisya"
+  },
+  {
+    "name": "corylus colurna",
+    "description": "Corylus colurna, the Turkish hazel or Turkish filbert, is a deciduous tree native to southeast Europe and southwest Asia, from the Balkans through northern Turkey to northern Iran.",
+    "nectar": 0,
+    "pollen": 5,
+    "image": "assets/images/corylus-colurna.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Corylus_colurna"
+  },
+  {
+    "name": "crocus chrysanthus",
+    "description": "Crocus chrysanthus (snow crocus, golden crocus) is a species of flowering plant of the Crocus genus in the family Iridaceae. Native to the Balkans and Turkey, it bears vivid orange-yellow bowl-shaped flowers.",
+    "nectar": 3,
+    "pollen": 5,
+    "image": "assets/images/crocus-chrysanthus.jpg",
+    "color": "yellow",
     "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
   }
 ]
