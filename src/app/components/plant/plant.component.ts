@@ -9,11 +9,18 @@ import { PathLocationStrategy } from '@angular/common';
 })
 
 export class PlantComponent {
-  title = 'BeePlanter';
   plants: Array<any> = plantsData;
   colors: Array<string> = this.mapColors();
   activeFilters = {
     colors: [],
+    nectar: {
+      min: 0,
+      max: 5
+    },
+    pollen: {
+      min: 0,
+      max: 5
+    }
   };
   filteredPlants: Array<any> = [...plantsData];
 
@@ -42,14 +49,18 @@ export class PlantComponent {
     this.filteredPlants = this.plants.filter( plant => {
       return this.activeFilters.colors.includes(plant.color);
     });
-    if (!this.filteredPlants.length) {
+    if (!this.activeFilters.colors.length) {
       this.resetFilters();
     }
   }
 
-  filterByNectar(minValue: number, maxValue: number){
+  filterByPollenOrNectar(minValue: number, maxValue: number, type: string) {
+    this.activeFilters[type] = {
+      min: minValue,
+      max: maxValue
+    };
     this.filteredPlants = this.filteredPlants.filter( plant => {
-      return plant.nectar >= minValue && plant.nectar <= maxValue;
+      return plant[type] >= minValue && plant[type] <= maxValue;
     });
   }
 
@@ -58,7 +69,8 @@ export class PlantComponent {
     const colorActive = this.activeFilters.colors.includes(color);
     const styles = {
       'background-color': color,
-      'box-shadow': (colorActive) ? boxShadow : ''
+      'box-shadow': (colorActive) ? boxShadow : '',
+      'border': `1px solid ${color}`
     };
     return styles;
   }

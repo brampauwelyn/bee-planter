@@ -1,6 +1,6 @@
 <div class="app-container">
   <div class="filters">
-    <h1>{{ title }}</h1>
+    <app-logo [title]="title" ></app-logo>
     <button (click)="resetFilters()">reset filters</button>
 
     <button
@@ -9,8 +9,8 @@
         class="color-preview"
         [ngStyle]="setBackgroundColor(color)">
     </button>
-    <button (click)="filterByNectar(3, 5)">nectar filter</button>
-    <!-- <span [ngStyle]="setBackgroundColor(plant.color)" class="color-preview"></span> -->
+    <button (click)="filterByPollenOrNectar(3, 5, 'nectar')">nectar filter</button>
+    <button (click)="filterByPollenOrNectar(3, 5, 'pollen')">pollen filter</button>
   </div>
 
   <div class="plants-wrapper">
