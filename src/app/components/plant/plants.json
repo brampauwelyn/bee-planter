@@ -95,5 +95,41 @@
     "image": "assets/images/crocus-chrysanthus.jpg",
     "color": "yellow",
     "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
+  },
+  {
+    "name": "helleborus niger",
+    "description": "Helleborus niger, commonly called Christmas rose or black hellebore, is an evergreen perennial flowering plant in the buttercup family, Ranunculaceae. It is poisonous.",
+    "nectar": 1,
+    "pollen": 4,
+    "image": "assets/images/helleborus-niger.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Helleborus_niger"
+  },
+  {
+    "name": "bellis perennis",
+    "description": "Bellis perennis is a common European species of daisy, of the Asteraceae family, often considered the archetypal species of that name.",
+    "nectar": 0,
+    "pollen": 1,
+    "image": "assets/images/bellis-perennis.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Bellis_perennis"
+  },
+  {
+    "name": "corylus avellana",
+    "description": "Corylus avellana, the common hazel, is a species of hazel native to Europe and western Asia, from the British Isles south to Iberia, Greece, Turkey and Cyprus, north to central Scandinavia, and east to the central Ural Mountains, the Caucasus, and northwestern Iran.",
+    "nectar": 0,
+    "pollen": 5,
+    "image": "assets/images/corylus-avellana.jpg",
+    "color": "undefined",
+    "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+  },
+  {
+    "name": "eranthis hyemalis",
+    "description": "Eranthis hyemalis is a species of flowering plant in the buttercup family Ranunculaceae, native to calcareous woodland habitats in France, Italy and the Balkans and widely naturalised elsewhere in Europe.",
+    "nectar": 3,
+    "pollen": 5,
+    "image": "assets/images/eranthis-hyemalis.jpg",
+    "color": "yellow",
+    "url": "https://en.wikipedia.org/wiki/Eranthis_hyemalis"
   }
 ]

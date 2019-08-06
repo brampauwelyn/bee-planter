@@ -9,6 +9,7 @@
         class="color-preview"
         [ngStyle]="setBackgroundColor(color)">
     </button>
+    <mat-slider min="0" max="5"  thumbLabel (change)="filterByPollenOrNectar(this.min, 'nectar')"></mat-slider>
     <button (click)="filterByPollenOrNectar(3, 5, 'nectar')">nectar filter</button>
     <button (click)="filterByPollenOrNectar(3, 5, 'pollen')">pollen filter</button>
   </div>

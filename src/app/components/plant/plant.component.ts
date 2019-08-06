@@ -54,14 +54,12 @@ export class PlantComponent {
     }
   }
 
-  filterByPollenOrNectar(minValue: number, maxValue: number, type: string) {
-    this.activeFilters[type] = {
-      min: minValue,
-      max: maxValue
-    };
-    this.filteredPlants = this.filteredPlants.filter( plant => {
-      return plant[type] >= minValue && plant[type] <= maxValue;
-    });
+  filterByPollenOrNectar(value: number, type: string) {
+    this.activeFilters[type].value = value;
+    console.log(value);
+    // this.filteredPlants = this.filteredPlants.filter( plant => {
+    //   return plant[type] >= minValue && plant[type] <= maxValue;
+    // });
   }
 
   setBackgroundColor(color: string){

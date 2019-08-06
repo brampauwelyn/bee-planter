@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MatSliderModule } from '@angular/material/slider';
 import { PlantComponent } from './components/plant/plant.component';
 import { LogoComponent } from './components/logo/logo.component';
 
@@ -10,7 +11,8 @@ import { LogoComponent } from './components/logo/logo.component';
     PlantComponent, LogoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [PlantComponent]
