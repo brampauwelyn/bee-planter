@@ -1,21 +1,23 @@
 <div class="app-container">
   <div class="filters">
     <app-logo [title]="title" ></app-logo>
-    <button (click)="resetFilters()">reset filters</button>
 
-    <button
+    <app-button *ngIf="filteredPlants.active" (click)="resetFilters()"></app-button>
+
+    <div class="color-filters">
+      <button
         *ngFor="let color of colors"
         (click)="filterByColor(color)"
         class="color-preview"
         [ngStyle]="setBackgroundColor(color)">
-    </button>
-    <mat-slider min="0" max="5"  thumbLabel (change)="filterByPollenOrNectar(this.min, 'nectar')"></mat-slider>
-    <button (click)="filterByPollenOrNectar(3, 5, 'nectar')">nectar filter</button>
-    <button (click)="filterByPollenOrNectar(3, 5, 'pollen')">pollen filter</button>
+      </button>
+    </div>
+    <label for="nectar-slider">nectar</label>
+    <mat-slider id="nectar-slider" min="0" max="5"  thumbLabel [(value)]="activeFilters.nectar" (change)="filterByPollenOrNectar('nectar')"></mat-slider>
   </div>
 
   <div class="plants-wrapper">
-    <div *ngFor="let plant of filteredPlants" class="card" >
+    <div *ngFor="let plant of filteredPlants.results" class="card" >
       <div class="card-image">
         <img [src]="plant.image" alt="">
       </div>
@@ -27,6 +29,7 @@
             <p>Pollen: {{ plant.pollen }}</p>
           </div>
           <p>{{ plant.description }}</p>
+          <a [href]="plant.url"> read more </a>
       </div>
     </div>
   </div>

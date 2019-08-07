@@ -13,16 +13,13 @@ export class PlantComponent {
   colors: Array<string> = this.mapColors();
   activeFilters = {
     colors: [],
-    nectar: {
-      min: 0,
-      max: 5
-    },
-    pollen: {
-      min: 0,
-      max: 5
-    }
+    nectar: 0,
+    pollen: 0
   };
-  filteredPlants: Array<any> = [...plantsData];
+  filteredPlants = {
+    active: false,
+    results: [...plantsData],
+  };
 
   mapColors() {
     const colorsArr: Array<string> = [];
@@ -35,18 +32,31 @@ export class PlantComponent {
   }
 
   resetFilters() {
-    this.filteredPlants = this.plants;
+    this.clearActiveFilters();
+    this.filteredPlants = {
+      active: false,
+      results: this.plants
+    };
     return this.filteredPlants;
   }
 
+  clearActiveFilters() {
+    return this.activeFilters = {
+      colors: [],
+      nectar: 0,
+      pollen: 0
+    };
+  }
+
   filterByColor(color: string) {
+    this.filteredPlants.active = true;
     if (this.activeFilters.colors.includes(color)) {
       const colorIndex = this.activeFilters.colors.indexOf(color);
       this.activeFilters.colors.splice(colorIndex, 1);
     } else {
       this.activeFilters.colors.push(color);
     }
-    this.filteredPlants = this.plants.filter( plant => {
+    this.filteredPlants.results = this.plants.filter( plant => {
       return this.activeFilters.colors.includes(plant.color);
     });
     if (!this.activeFilters.colors.length) {
@@ -54,12 +64,10 @@ export class PlantComponent {
     }
   }
 
-  filterByPollenOrNectar(value: number, type: string) {
-    this.activeFilters[type].value = value;
-    console.log(value);
-    // this.filteredPlants = this.filteredPlants.filter( plant => {
-    //   return plant[type] >= minValue && plant[type] <= maxValue;
-    // });
+  filterByPollenOrNectar(type: string) {
+    this.filteredPlants.results = this.filteredPlants.results.filter( plant => {
+      return plant[type] <= this.activeFilters[type];
+    });
   }
 
   setBackgroundColor(color: string){
