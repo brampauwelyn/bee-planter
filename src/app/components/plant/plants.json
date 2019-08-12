@@ -131,5 +131,59 @@
     "image": "assets/images/eranthis-hyemalis.jpg",
     "color": "yellow",
     "url": "https://en.wikipedia.org/wiki/Eranthis_hyemalis"
+  },
+  {
+    "name": "crocus vernus",
+    "description": "Crocus vernus (Spring Crocus, Giant Crocus) is a species in Family Iridaceae, native to the Alps, the Pyrenees, and the Balkans",
+    "nectar": 3,
+    "pollen": 4,
+    "image": "assets/images/crocus-vernus.jpg",
+    "color": "purple",
+    "url": "https://en.wikipedia.org/wiki/Crocus_vernus"
+  },
+  {
+    "name": "capsella bursa-pastoris",
+    "description": "Capsella bursa-pastoris, known by its common name shepherd's purse because of its triangular flat fruits.",
+    "nectar": 4,
+    "pollen": 4,
+    "image": "assets/images/capsella-bursa-pastoris.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+  },
+  {
+    "name": "salix caprea",
+    "description": "Salix caprea (goat willow, also known as the pussy willow or great sallow) is a common species of willow native to Europe and western and central Asia.",
+    "nectar": 4,
+    "pollen": 5,
+    "image": "assets/images/salix-caprea.jpg",
+    "color": "undefined",
+    "url": "https://en.wikipedia.org/wiki/Salix_caprea"
+  },
+  {
+    "name": "Cercis siliquastrum",
+    "description": "Cercis siliquastrum, commonly known as the Judas tree or Judas-tree, is a small deciduous tree from Southern Europe and Western Asia which is noted for its prolific display of deep pink flowers in spring. ",
+    "nectar": 3,
+    "pollen": 4,
+    "image": "assets/images/cercis-siliquastrum.jpg",
+    "color": "pink",
+    "url": "https://en.wikipedia.org/wiki/Cercis_siliquastrum"
+  },
+  {
+    "name": "senecio vulgaris",
+    "description": "Senecio vulgaris, often known by the common names groundsel and old-man-in-the-Spring,[4] is a flowering plant in the daisy family Asteraceae.",
+    "nectar": 2,
+    "pollen": 1,
+    "image": "assets/images/senecio-vulgaris.jpg",
+    "color": "yellow",
+    "url": "https://en.wikipedia.org/wiki/Senecio_vulgaris"
+  },
+  {
+    "name": "erica darleyensis",
+    "description": "Erica × darleyensis (unresolved), the Darley Dale heath, is a plant hybrid between the heathers E. carnea and E. erigena, probably of garden origin.",
+    "nectar": 3,
+    "pollen": 4,
+    "image": "assets/images/erica-darleyensis.jpg",
+    "color": "purple",
+    "url": "https://en.wikipedia.org/wiki/Erica_%C3%97_darleyensis"
   }
 ]
