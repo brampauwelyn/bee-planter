@@ -11,6 +11,12 @@ import { PathLocationStrategy } from '@angular/common';
 export class PlantComponent {
   plants: Array<any> = plantsData;
   colors: Array<string> = this.mapColors();
+  months: Array<string> = [
+    'January', 'February', 'March',
+    'April', 'May', 'June',
+    'July', 'August', 'September',
+    'October', 'November', 'December'
+  ];
   activeFilters = {
     colors: [],
     nectar: 0,

@@ -75,7 +75,14 @@
   cursor: pointer;
 }
 
-.color-filters{
+.color-filters,
+.month-filters{
   display: flex;
   flex-wrap: wrap;
 }
+
+.month-filters{
+  margin: 20px 0;
+}
+
+

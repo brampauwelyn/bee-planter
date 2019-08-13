@@ -2,7 +2,9 @@
   <div class="filters">
     <app-logo [title]="title" ></app-logo>
 
-    <app-button *ngIf="filteredPlants.active" (click)="resetFilters()"></app-button>
+    <p *ngIf="filteredPlants.active">
+      <strong>{{ filteredPlants.results.length }}</strong> plants matched your criteria
+    </p>
 
     <div class="color-filters">
       <button
@@ -12,8 +14,18 @@
         [ngStyle]="setBackgroundColor(color)">
       </button>
     </div>
+
+    <div class="month-filters">
+      <button
+        *ngFor="let month of months"
+        class="btn">
+        {{ month }}
+      </button>
+    </div>
     <label for="nectar-slider">nectar</label>
     <mat-slider id="nectar-slider" min="0" max="5"  thumbLabel [(value)]="activeFilters.nectar" (change)="filterByPollenOrNectar('nectar')"></mat-slider>
+    <app-button *ngIf="filteredPlants.active" (click)="resetFilters()"></app-button>
+
   </div>
 
   <div class="plants-wrapper">
