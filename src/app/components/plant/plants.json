@@ -5,7 +5,8 @@
     "nectar": 2,
     "pollen": 2,
     "image": "assets/images/viburnum-bodnantense.jpg",
-    "color": "red"
+    "color": "red",
+    "flowering": ["jan"]
   },
   {
     "name": "parrotia persica",
@@ -13,7 +14,8 @@
     "nectar": 5,
     "pollen": 5,
     "image": "assets/images/parrotia-persica.jpg",
-    "color": "red"
+    "color": "red",
+    "flowering": ["jan","feb","mar"]
   },
   {
     "name": "sarcococca confusa",
@@ -22,7 +24,8 @@
     "pollen": 5,
     "image": "assets/images/sarcococca-confusa.jpg",
     "color": "white",
-    "url": "https://en.wikipedia.org/wiki/Sarcococca_confusa"
+    "url": "https://en.wikipedia.org/wiki/Sarcococca_confusa",
+    "flowering": []
   },
   {
     "name": "abeliophyllum distichum",
@@ -31,7 +34,8 @@
     "pollen": 3,
     "image": "assets/images/abeliophyllum-distichum.jpg",
     "color": "pink",
-    "url": "https://en.wikipedia.org/wiki/Abeliophyllum"
+    "url": "https://en.wikipedia.org/wiki/Abeliophyllum",
+    "flowering": []
   },
   {
     "name": "crocus tommasinianus",
@@ -40,7 +44,8 @@
     "pollen": 5,
     "image": "assets/images/crocus-tommasinianus.jpg",
     "color": "purple",
-    "url": "https://en.wikipedia.org/wiki/Crocus_tommasinianus"
+    "url": "https://en.wikipedia.org/wiki/Crocus_tommasinianus",
+    "flowering": []
   },
   {
     "name": "prunus persica",
@@ -49,7 +54,8 @@
     "pollen": 2,
     "image": "assets/images/prunus-persica.jpg",
     "color": "pink",
-    "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
+    "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus",
+    "flowering": []
   },
   {
     "name": "prunus amygdalus",
@@ -58,7 +64,8 @@
     "pollen": 2,
     "image": "assets/images/prunus-amygdalus.jpg",
     "color": "white",
-    "url": "https://en.wikipedia.org/wiki/Almond"
+    "url": "https://en.wikipedia.org/wiki/Almond",
+    "flowering": []
   },
   {
     "name": "prunus cerasifera",
@@ -67,7 +74,8 @@
     "pollen": 2,
     "image": "assets/images/prunus-cerasifera.jpg",
     "color": "pink",
-    "url": "https://en.wikipedia.org/wiki/Cherry_plum"
+    "url": "https://en.wikipedia.org/wiki/Cherry_plum",
+    "flowering": []
   },
   {
     "name": "choisya ternata",
@@ -76,7 +84,8 @@
     "pollen": 3,
     "image": "assets/images/choisya-ternata.jpg",
     "color": "white",
-    "url": "https://en.wikipedia.org/wiki/Choisya"
+    "url": "https://en.wikipedia.org/wiki/Choisya",
+    "flowering": []
   },
   {
     "name": "corylus colurna",
@@ -85,7 +94,8 @@
     "pollen": 5,
     "image": "assets/images/corylus-colurna.jpg",
     "color": "white",
-    "url": "https://en.wikipedia.org/wiki/Corylus_colurna"
+    "url": "https://en.wikipedia.org/wiki/Corylus_colurna",
+    "flowering": []
   },
   {
     "name": "crocus chrysanthus",
@@ -94,7 +104,8 @@
     "pollen": 5,
     "image": "assets/images/crocus-chrysanthus.jpg",
     "color": "yellow",
-    "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus"
+    "url": "https://en.wikipedia.org/wiki/Crocus_chrysanthus",
+    "flowering": []
   },
   {
     "name": "helleborus niger",
@@ -103,7 +114,8 @@
     "pollen": 4,
     "image": "assets/images/helleborus-niger.jpg",
     "color": "white",
-    "url": "https://en.wikipedia.org/wiki/Helleborus_niger"
+    "url": "https://en.wikipedia.org/wiki/Helleborus_niger",
+    "flowering": []
   },
   {
     "name": "bellis perennis",
@@ -112,7 +124,8 @@
     "pollen": 1,
     "image": "assets/images/bellis-perennis.jpg",
     "color": "white",
-    "url": "https://en.wikipedia.org/wiki/Bellis_perennis"
+    "url": "https://en.wikipedia.org/wiki/Bellis_perennis",
+    "flowering": []
   },
   {
     "name": "corylus avellana",
@@ -121,7 +134,8 @@
     "pollen": 5,
     "image": "assets/images/corylus-avellana.jpg",
     "color": "undefined",
-    "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+    "url": "https://en.wikipedia.org/wiki/Corylus_avellana",
+    "flowering": []
   },
   {
     "name": "eranthis hyemalis",
@@ -130,7 +144,8 @@
     "pollen": 5,
     "image": "assets/images/eranthis-hyemalis.jpg",
     "color": "yellow",
-    "url": "https://en.wikipedia.org/wiki/Eranthis_hyemalis"
+    "url": "https://en.wikipedia.org/wiki/Eranthis_hyemalis",
+    "flowering": []
   },
   {
     "name": "crocus vernus",
@@ -139,7 +154,8 @@
     "pollen": 4,
     "image": "assets/images/crocus-vernus.jpg",
     "color": "purple",
-    "url": "https://en.wikipedia.org/wiki/Crocus_vernus"
+    "url": "https://en.wikipedia.org/wiki/Crocus_vernus",
+    "flowering": []
   },
   {
     "name": "capsella bursa-pastoris",
@@ -148,7 +164,8 @@
     "pollen": 4,
     "image": "assets/images/capsella-bursa-pastoris.jpg",
     "color": "white",
-    "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+    "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris",
+    "flowering": []
   },
   {
     "name": "salix caprea",
@@ -157,7 +174,8 @@
     "pollen": 5,
     "image": "assets/images/salix-caprea.jpg",
     "color": "undefined",
-    "url": "https://en.wikipedia.org/wiki/Salix_caprea"
+    "url": "https://en.wikipedia.org/wiki/Salix_caprea",
+    "flowering": []
   },
   {
     "name": "Cercis siliquastrum",
@@ -166,7 +184,8 @@
     "pollen": 4,
     "image": "assets/images/cercis-siliquastrum.jpg",
     "color": "pink",
-    "url": "https://en.wikipedia.org/wiki/Cercis_siliquastrum"
+    "url": "https://en.wikipedia.org/wiki/Cercis_siliquastrum",
+    "flowering": []
   },
   {
     "name": "senecio vulgaris",
@@ -175,7 +194,8 @@
     "pollen": 1,
     "image": "assets/images/senecio-vulgaris.jpg",
     "color": "yellow",
-    "url": "https://en.wikipedia.org/wiki/Senecio_vulgaris"
+    "url": "https://en.wikipedia.org/wiki/Senecio_vulgaris",
+    "flowering": []
   },
   {
     "name": "erica darleyensis",
@@ -184,7 +204,8 @@
     "pollen": 4,
     "image": "assets/images/erica-darleyensis.jpg",
     "color": "purple",
-    "url": "https://en.wikipedia.org/wiki/Erica_%C3%97_darleyensis"
+    "url": "https://en.wikipedia.org/wiki/Erica_%C3%97_darleyensis",
+    "flowering": []
   },
   {
     "name": "galanthus nivalis",
@@ -192,7 +213,98 @@
     "nectar": 4,
     "pollen": 4,
     "image": "assets/images/galanthus-nivalis.jpg",
-    "color": "purple",
-    "url": "https://en.wikipedia.org/wiki/Galanthus_nivalis"
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Galanthus_nivalis",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "petasites hybridus",
+    "description": "Petasites hybridus, the butterbur, is a herbaceous perennial flowering plant in the daisy family Asteraceae, native to Europe and northern Asia.",
+    "nectar": 4,
+    "pollen": 5,
+    "image": "assets/images/petasites-hybridus.jpg",
+    "color": "pink",
+    "url": "https://en.wikipedia.org/wiki/Petasites_hybridus",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "elaeagnus umbellata",
+    "description": "Elaeagnus, silverberry or oleaster, is a genus of about 50–70 species of flowering plants in the family Elaeagnaceae.",
+    "nectar": 5,
+    "pollen": 2,
+    "image": "assets/images/elaeagnus-umbellata.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Scilla_bifolia",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "scilla bifolia",
+    "description": "Scilla bifolia (alpine squill or two-leaf squill) is a herbaceous perennial growing from an underground bulb, belonging to the genus Scilla of the Asparagaceae family. ",
+    "nectar": 4,
+    "pollen": 4,
+    "image": "assets/images/scilla-bifolia.jpg",
+    "color": "blue",
+    "url": "https://en.wikipedia.org/wiki/Scilla_bifolia",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "helleborus foetidus",
+    "description": "Helleborus foetidus, known variously as stinking hellebore, dungwort, setterwort and bear's foot, is a species of flowering plant in the buttercup family Ranunculaceae, native to the mountainous regions of Central and Southern Europe, Greece and Asia Minor.",
+    "nectar": 2,
+    "pollen": 4,
+    "image": "assets/images/helleborus-foetidus.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Helleborus_foetidus",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "prunus spinosa",
+    "description": "Prunus spinosa, called blackthorn or sloe, is a species of flowering plant in the rose family Rosaceae. It is native to Europe, western Asia, and locally in northwest Africa.",
+    "nectar": 2,
+    "pollen": 4,
+    "image": "assets/images/prunus-spinosa.jpg",
+    "color": "undefined",
+    "url": "https://en.wikipedia.org/wiki/Prunus_spinosa",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "caltha palustris",
+    "description": "Caltha palustris, known as marsh-marigold and kingcup, is a small to medium size perennial herbaceous plant of the buttercup family, native to marshes, fens, ditches and wet woodland in temperate regions of the Northern Hemisphere.",
+    "nectar": 4,
+    "pollen": 2,
+    "image": "assets/images/caltha-palustris.jpg",
+    "color": "yellow",
+    "url": "https://en.wikipedia.org/wiki/Caltha_palustris",
+    "flowering": ["mar", "apr", "may"]
+  },
+  {
+    "name": "cornus mas",
+    "description": "Cornus mas (Cornelian cherry, European cornel or Cornelian cherry dogwood) is a species of flowering plant in the dogwood family Cornaceae native to Southern Europe and Southwestern Asia.",
+    "nectar": 4,
+    "pollen": 3,
+    "image": "assets/images/cornus-mas.jpg",
+    "color": "yellow",
+    "url": "https://en.wikipedia.org/wiki/Cornus_mas",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "pachysandra terminalis",
+    "description": "Pachysandra terminalis, the Japanese pachysandra, carpet box or Japanese spurge, is a species of flowering plant in the boxwood family Buxaceae, native to Japan, Korea and China.",
+    "nectar": 2,
+    "pollen": 2,
+    "image": "assets/images/pachysandra-terminalis.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Pachysandra_terminalis",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "ficaria verna",
+    "description": "Ficaria verna, (formerly Ranunculus ficaria L.) commonly known as lesser celandine or pilewort,[3] is a low-growing, hairless perennial flowering plant in the buttercup family Ranunculaceae native to Europe and west Asia.",
+    "nectar": 2,
+    "pollen": 2,
+    "image": "assets/images/ficaria-verna.jpg",
+    "color": "yellow",
+    "url": "https://en.wikipedia.org/wiki/Ficaria_verna",
+    "flowering": ["mar", "apr", "may"]
   }
 ]

@@ -2,8 +2,8 @@
   <div class="filters">
     <app-logo [title]="title" ></app-logo>
 
-    <p *ngIf="filteredPlants.active">
-      <strong>{{ filteredPlants.results.length }}</strong> plants matched your criteria
+    <p >
+      <strong>{{ filteredPlants.results.length || plants.length }}</strong> plants matched your criteria
     </p>
 
     <div class="color-filters">
@@ -18,7 +18,9 @@
     <div class="month-filters">
       <button
         *ngFor="let month of months"
-        class="btn">
+        (click)="filterByFloweringTime(month)"
+        class="btn"
+        [class.active]="setActiveClass(month)">
         {{ month }}
       </button>
     </div>
@@ -36,7 +38,7 @@
       <div class="card-body">
           <h2 class="card-title">{{ plant.name }}</h2>
           <div class="plant-specs">
-            <p>Flowering: </p>
+            <p>{{ plant.flowering }}</p>
             <p>Nectar: {{ plant.nectar }}</p>
             <p>Pollen: {{ plant.pollen }}</p>
           </div>

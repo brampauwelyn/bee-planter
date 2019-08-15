@@ -20,7 +20,8 @@ export class PlantComponent {
   activeFilters = {
     colors: [],
     nectar: 0,
-    pollen: 0
+    pollen: 0,
+    flowering: []
   };
   filteredPlants = {
     active: false,
@@ -50,7 +51,8 @@ export class PlantComponent {
     return this.activeFilters = {
       colors: [],
       nectar: 0,
-      pollen: 0
+      pollen: 0,
+      flowering: []
     };
   }
 
@@ -71,9 +73,34 @@ export class PlantComponent {
   }
 
   filterByPollenOrNectar(type: string) {
+    this.filteredPlants.active = true;
     this.filteredPlants.results = this.filteredPlants.results.filter( plant => {
       return plant[type] <= this.activeFilters[type];
     });
+  }
+
+  filterByFloweringTime(month: string) {
+    const monthAbbr = month.toLowerCase().substring(0, 3);
+    this.filteredPlants.active = true;
+    if (this.activeFilters.flowering.includes(monthAbbr)) {
+      const monthIndex = this.months.indexOf(month);
+      this.activeFilters.flowering.splice(monthIndex, 1);
+    } else {
+      this.activeFilters.flowering.push(monthAbbr);
+    }
+    this.filteredPlants.results = this.plants.filter( plant => {
+      return this.activeFilters.flowering.includes(plant.flowering[0]);
+    });
+    if (!this.activeFilters.flowering.length) {
+      this.resetFilters();
+    }
+  }
+
+  setActiveClass(month: string){
+    const monthAbbr = month.toLowerCase().substring(0, 3);
+    if (this.activeFilters.flowering.includes(monthAbbr)) {
+      return true;
+    }
   }
 
   setBackgroundColor(color: string){
