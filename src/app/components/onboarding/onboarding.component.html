@@ -1,0 +1,7 @@
+<div class="onboarding-wrapper" [ngClass]="(showOnboarding) ? '' : 'hidden' ">
+  <div class="onboarding-modal">
+      <h1>{{ title }}</h1>
+      <button (click)="stopOnboarding()">Stop onboarding</button>
+      <button (click)="startOnboarding()">Start onboarding</button>
+  </div>
+</div>
