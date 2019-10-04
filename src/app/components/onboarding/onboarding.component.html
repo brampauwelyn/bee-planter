@@ -1,9 +1,27 @@
 <div class="onboarding-wrapper" [ngClass]="(showOnboarding) ? '' : 'hidden' ">
   <div class="onboarding-modal">
+    <div class="onboarding-content" *ngIf="onboardingStep === 1">
       <h1>{{ title }}</h1>
-      <p>BeePlanter lets you disover beefriendly plants</p>
+      <img src="assets/icons/onboarding_welcome.png" width="180">
+      <p>
+        Every year the beepopulation is decreasing due to various reasons (climate change, use of pesticides, etc.) <br/>
+        You can help and protect the bees by planting beefriendly flowers and trees.
+      </p>
+      <p><strong>BeePlanter</strong> helps you choose beefriendly plants for your garden!</p>
       <p>Wanne see how it works?</p>
-      <app-button class="primary" (click)="startOnboarding()" label="Take the tour"></app-button>
-      <app-button class="secondary" (click)="stopOnboarding()" label="Close"></app-button>
+      <div>
+        <button class="primary" (click)="onboardingGoToNextStep()">Yes show me!</button>
+      </div>
+    </div>
+    <div class="onboarding-content" *ngIf="onboardingStep === 2">
+      <h1>Filter plants by color</h1>
+      <img src="assets/icons/onboarding_welcome.png" width="180">
+      <p>
+        This is step 2
+      </p>
+      <div>
+        <button class="primary" (click)="onboardingGoToNextStep()">Next step!</button>
+      </div>
+    </div>
   </div>
 </div>

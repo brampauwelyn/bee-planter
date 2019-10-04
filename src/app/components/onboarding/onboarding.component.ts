@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-onboarding',
@@ -8,18 +7,25 @@ import { ButtonComponent } from '../button/button.component';
 })
 
 export class OnboardingComponent {
-  title = 'onboarding';
+  title = 'Welcome';
   LBL = {
     startOnboarding: 'start onboarding',
     stopOnboarding: 'stop onboarding'
   };
   showOnboarding: boolean = this.initSessionStorage();
+  onboardingStep: number = 1;
 
   initSessionStorage() {
     if (!localStorage.getItem('showOnboarding')) {
       localStorage.setItem('showOnboarding', 'enabled');
       return true;
-    }
+    }else if (localStorage.getItem('showOnboarding') === 'enabled') {
+      return true;
+    }  
+  }
+
+  onboardingGoToNextStep() {
+    this.onboardingStep += 1;
   }
 
   stopOnboarding() {

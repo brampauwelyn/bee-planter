@@ -26,7 +26,7 @@
     </div>
     <label for="nectar-slider">nectar</label>
     <mat-slider id="nectar-slider" min="0" max="5"  thumbLabel [(value)]="activeFilters.nectar" (change)="filterByPollenOrNectar('nectar')"></mat-slider>
-    <app-button *ngIf="filteredPlants.active" (click)="resetFilters()"></app-button>
+    <button *ngIf="filteredPlants.active" (click)="resetFilters()"></button>
 
   </div>
 
