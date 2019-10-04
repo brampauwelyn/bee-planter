@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-onboarding',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 
 export class OnboardingComponent {
   title = 'onboarding';
+  LBL = {
+    startOnboarding: 'start onboarding',
+    stopOnboarding: 'stop onboarding'
+  };
   showOnboarding: boolean = this.initSessionStorage();
 
   initSessionStorage() {

@@ -1,20 +1,42 @@
+// color variables
 $yellow: #faf562;
+$green: #9bde7e;
 $black: #111;
 
+// button variation mixin
+@mixin buttonStyle($backgroundColor, $textColor) {
+  background-color: $backgroundColor;
+  color: $textColor;
+
+  &:hover {
+    background-color: darken($backgroundColor, 10%);
+  }
+}
+
+// main button style
 button{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   padding: 20px;
-  background-color: $yellow;
   border: none;
   font-size: 1em;
-  color: $black;
   transition: .35s background-color;
 
   &:hover{
     cursor: pointer;
-    background-color: darken($yellow, 10%);
   }
+}
+
+// button variations
+.primary {
+  @include buttonStyle($yellow, $black)
+}
+
+.secondary {
+  @include buttonStyle($green, $black);
+}
+
+.sticky {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

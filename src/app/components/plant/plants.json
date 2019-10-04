@@ -306,5 +306,75 @@
     "color": "yellow",
     "url": "https://en.wikipedia.org/wiki/Ficaria_verna",
     "flowering": ["mar", "apr", "may"]
+  },
+  {
+    "name": "iberis sempervirens",
+    "description": "Iberis sempervirens, the evergreen candytuft or perennial candytuft, is a species of flowering plant in the family Brassicaceae, native to southern Europe.",
+    "nectar": 2,
+    "pollen": 3,
+    "image": "assets/images/iberis-sempervirens.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Iberis_sempervirens",
+    "flowering": ["mar", "apr", "may"]
+  },
+  {
+    "name": "buxus sempervirens",
+    "description": "Buxus sempervirens is an evergreen shrub or small tree growing up to 1 to 9 m (3 to 30 ft) tall, with a trunk up to 20 centimetres (8 in) in diameter (exceptionally to 10 m tall and 45 cm diameter).",
+    "nectar": 2,
+    "pollen": 2,
+    "image": "assets/images/buxus.jpg",
+    "color": "yellow",
+    "url": "https://en.wikipedia.org/wiki/Buxus_sempervirens",
+    "flowering": ["mar", "apr"]
+  },
+  {
+    "name": "vinca minor",
+    "description": "Vinca minor is a trailing subshrub, spreading along the ground and rooting along the stems to form large clonal colonies and occasionally scrambling up to 40 centimetres (16 in) high but never twining or climbing.",
+    "nectar": 1,
+    "pollen": 2,
+    "image": "assets/images/vinca-minor.jpg",
+    "color": "purple",
+    "url": "https://en.wikipedia.org/wiki/Vinca_minor",
+    "flowering": ["mar", "apr", "may", "jun"]
+  },
+  {
+    "name": "photinia",
+    "description": "Photinias typically grow from 4–15 m tall, with a usually irregular crown of angular branches; the branches are often (not always) thorny. The leaves are alternate, entire or finely toothed, varying between species from 3–15 cm in length and 1.5–5 cm wide",
+    "nectar": 3,
+    "pollen": 2,
+    "image": "assets/images/photinia.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Photinia",
+    "flowering": ["mar", "apr", "may"]
+  },
+  {
+    "name": "Pulsatilla vulgaris",
+    "description": "Pulsatilla vulgaris (pasque flower, pasqueflower, common pasque flower, European pasqueflower, is a species of flowering plant belonging to the buttercup family (Ranunculaceae), found locally on calcareous grassland in Europe",
+    "nectar": 2,
+    "pollen": 4,
+    "image": "assets/images/pulsatilla-vulgaris.jpg",
+    "color": "purple",
+    "url": "https://en.wikipedia.org/wiki/Pulsatilla_vulgaris",
+    "flowering": ["apr", "may"]
+  },
+  {
+    "name": "corydalis",
+    "description": "Corydalis (Greek korydalís \"crested lark\") is a genus of about 470 species of annual and perennial herbaceous plants in the Papaveraceae family, native to the temperate Northern Hemisphere and the high mountains of tropical eastern Africa.",
+    "nectar": 2,
+    "pollen": 4,
+    "image": "assets/images/corydalis.jpg",
+    "color": "pink",
+    "url": "https://en.wikipedia.org/wiki/Corydalis",
+    "flowering": ["apr", "may", "jun"]
+  },
+  {
+    "name": "sorbus aria",
+    "description": "Sorbus aria (syn. Aria nivea), the whitebeam or common whitebeam, is a European and Near-Eastern deciduous tree, the type species of the subgenus of the whitebeams.",
+    "nectar": 2,
+    "pollen": 2,
+    "image": "assets/images/sorbus-aria.jpg",
+    "color": "white",
+    "url": "https://en.wikipedia.org/wiki/Sorbus_aria",
+    "flowering": ["apr", "may", "jun", "jul"]
   }
 ]

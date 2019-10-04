@@ -1,7 +1,9 @@
 <div class="onboarding-wrapper" [ngClass]="(showOnboarding) ? '' : 'hidden' ">
   <div class="onboarding-modal">
       <h1>{{ title }}</h1>
-      <button (click)="stopOnboarding()">Stop onboarding</button>
-      <button (click)="startOnboarding()">Start onboarding</button>
+      <p>BeePlanter lets you disover beefriendly plants</p>
+      <p>Wanne see how it works?</p>
+      <app-button class="primary" (click)="startOnboarding()" label="Take the tour"></app-button>
+      <app-button class="secondary" (click)="stopOnboarding()" label="Close"></app-button>
   </div>
 </div>
