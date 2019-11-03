@@ -372,7 +372,7 @@
     "description": "Sorbus aria (syn. Aria nivea), the whitebeam or common whitebeam, is a European and Near-Eastern deciduous tree, the type species of the subgenus of the whitebeams.",
     "nectar": 2,
     "pollen": 2,
-    "image": "assets/images/sorbus-aria.jpg",
+    "image": "https://commons.wikimedia.org/wiki/File:Crocus-napolitanus.jpg",
     "color": "white",
     "url": "https://en.wikipedia.org/wiki/Sorbus_aria",
     "flowering": ["apr", "may", "jun", "jul"]

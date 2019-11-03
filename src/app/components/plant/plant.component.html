@@ -30,10 +30,10 @@
 
   </div>
 
-  <div class="plants-wrapper">
-    <div *ngFor="let plant of filteredPlants.results" class="card" >
-      <div class="card-image">
-        <img [src]="plant.image" alt="">
+  <div class="plants-wrapper"  lazy-load-images>
+    <div *ngFor="let plant of filteredPlants.results" class="card">
+      <div class="card-image" >
+        <img [attr.data-src]="https://dummyimage.com/600x400/000/fff" alt="">
       </div>
       <div class="card-body">
           <h2 class="card-title">{{ plant.name }}</h2>

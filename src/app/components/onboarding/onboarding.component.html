@@ -1,5 +1,6 @@
 <div class="onboarding-wrapper" [ngClass]="(showOnboarding) ? '' : 'hidden' ">
   <div class="onboarding-modal">
+    <!-- Onboarding Step 1 -->
     <div class="onboarding-content" *ngIf="onboardingStep === 1">
       <h1>{{ title }}</h1>
       <img src="assets/icons/onboarding_welcome.png" width="180">
@@ -13,15 +14,32 @@
         <button class="primary" (click)="onboardingGoToNextStep()">Yes show me!</button>
       </div>
     </div>
+
+    <!-- Onboarding Step 2 -->
     <div class="onboarding-content" *ngIf="onboardingStep === 2">
       <h1>Filter plants by color</h1>
-      <img src="assets/icons/onboarding_welcome.png" width="180">
+      <img src="assets/icons/onboarding_step2.png" width="180">
       <p>
-        This is step 2
+        BeePlanter makes it possible to search for plants by color, so you can choose plants of you're favorite color. <br/>
+        Btw, Did you know that bees don't see colors the same as humans? 
       </p>
       <div>
         <button class="primary" (click)="onboardingGoToNextStep()">Next step!</button>
       </div>
     </div>
+
+    <!-- Onboarding Step 2 -->
+    <div class="onboarding-content" *ngIf="onboardingStep === 3">
+      <h1>Filter plants by time of flowering</h1>
+      <img src="assets/icons/onboarding_step3.png" width="180">
+      <p>
+       Just like humans bees need food throughout the whole year. <br/>
+       If you want a beefriendly garden, it is good idea to search for plants which are flowering during winter time.
+      </p>
+      <div>
+        <button class="primary" (click)="onboardingGoToNextStep()">Next step!</button>
+      </div>
+    </div>
+
   </div>
 </div>
